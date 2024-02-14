@@ -1,0 +1,464 @@
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+.titulo_principal {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 4rem;
+    padding: 0 1.5rem;
+}
+
+.logo {
+    height: 7rem;
+    width: auto;
+}
+
+.caja_nav {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.navegacion_principal {
+    font-size: 2rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacion_principal a {
+    color: black;
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.imagen_principal {
+    background-image: url(imagentermo333.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor_main {
+    width: min(95%, 120rem);
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+
+.titulo_productos {
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 3.5rem;
+}
+
+.titulo_secundario {
+    margin: 4rem 0 9rem 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 5.5rem;
+}
+
+.parrafo_secundario {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 2rem;
+    color: white;
+    text-shadow: 0.3rem 0.3rem 0.3rem #000000;
+    font-weight: 300;
+}
+
+.navegacion_principal a:hover {
+    background-color: #e6e6e6;
+    
+}
+
+.contenedor_productos {
+    display: grid;
+    place-items: center;
+    gap: 5rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 1.2rem;
+    width: min(95%, 40rem);
+    box-shadow: 0 0 9px 1px rgb(148, 148, 148);
+    height: 65rem;
+    justify-content: space-between;
+}
+
+
+dialog {
+    margin: auto;
+    width: 80%;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 9px 1px rgb(148, 148, 148);
+}
+
+dialog h1 {
+    font-size: 2.5rem;
+}
+
+.btn_comprarinfo {
+    display: grid;
+    gap: 1rem;
+}
+
+.boton_vermas {
+    background-color: #F0E1C6;
+    color: black;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 0.5rem;
+    font-size: 2rem; 
+}
+
+.boton_vermas:hover {
+    cursor: pointer;
+}
+
+.boton_comprar {
+    background-color: #ff9c38;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+.cerrar_modal {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 0;
+    box-shadow: 0 0 0 1px;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+.cerrar_modal:hover {
+    cursor: pointer;
+}
+
+.boton_comprar:hover {
+    cursor: pointer;
+    background-color: #ffaf5e;
+}
+
+.imagen_producto {
+    width: 100%;
+}
+
+.precio {
+    display: flex;
+    justify-content: end;
+}
+
+.monto {
+    margin: 2rem 1rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.oferta {
+    font-size: 2rem;
+    text-decoration: line-through;
+    color: rgb(68, 68, 68);
+}
+
+.caja_ventajas {
+    text-align: center;
+    margin: 5rem 1rem;
+}
+
+.pregunta_ventajas {
+    font-size: 3.5rem;
+}
+
+.lista_ventajas {
+    list-style: none;
+    display: grid;
+    gap: 2rem;
+    padding: 0;
+}
+
+.caja_preguntas_frecuentes {
+    margin: 0 1rem;
+}
+
+.texto_preguntas {
+    font-size: 3.5rem;
+}
+
+.preguntas_frecuentes {
+    display: grid;
+    gap: 1rem;
+}
+
+summary {
+    list-style-type: none;
+    box-shadow: 0 0 0 1.5px #ff9c38;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+.respuesta_pregunta {
+    font-size: 2.2rem;
+}
+
+.lista_preguntas_frecuentes {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.caja_formulario {
+    margin-top: 8rem;
+}
+
+.texto_formulario {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.formulario {
+    background-color: #F0E1C6;
+    padding: 3.5rem 0.5rem 1rem 0.5rem;
+    border-radius: 1rem;
+    width: min(50rem,80%);
+    margin: 0 auto;
+    margin-bottom: 8rem;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.info_formulario {
+    margin: 3rem 1rem;
+}
+
+.info_formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.input_text {
+    background-color: rgba(255, 253, 242, 0.671);
+    border: none;
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.btn_formulario {
+    padding: 1rem;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    border: 0;
+    margin-top: 3rem;
+}
+
+.btn_formulario:hover {
+    cursor: pointer;
+}
+
+textarea {
+    height: 10rem;
+    width: 100%;
+    resize: none;
+}
+
+.footer {
+    background-color: #F0F0F0;
+    padding: 3rem 5rem;
+    display: grid;
+    margin-top: 7rem;
+}
+
+.caja_footer {
+    width: min(95%, 120rem);
+    margin: 0 auto;
+    font-size: 1.8rem;
+    background-color: #F0F0F0;
+    display: grid;
+    gap: 3rem;
+    margin-bottom: 10rem;
+    justify-content: space-between;
+}
+
+.legal {
+    display: grid;
+}
+
+.tus_termos {
+    display: grid;
+}
+
+.caja_imagen_footer {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.imagen_footer {
+    box-sizing: border-box;
+    height: auto;
+    max-width: 100%;
+    width: 40rem;
+}
+
+.caja_imagen_footer p {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+.ofertas {
+    margin-bottom: 2rem;
+}
+
+.caja_footer a {
+    color: #000000;
+}
+
+.caja_footer p {
+    color: #4d4d4d;
+}
+
+
+
+/* Tablet */
+@media (min-width: 768px) {
+    .navegacion_principal {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .logo {
+        height: 8rem;
+        width: auto;
+    }
+    .titulo_secundario {
+        font-size: 5.5rem;
+    }
+    .parrafo_secundario {
+        font-size: 2rem;
+    }
+    .contenedor_productos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+    .pregunta_ventajas {
+        font-size: 4rem;
+    }
+    .formulario {
+        width: min(60rem,80%);
+    }
+    .btn_formulario {
+        font-size: 2rem;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .caja_footer {
+        display: flex;
+        gap: 5rem;
+    }
+    .legal {
+        gap: 1rem;
+    }
+    dialog {
+        width: 70%;
+    }
+
+}
+
+/* Compu */
+@media (min-width: 1024px) {
+    .caja_nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    .logo {
+        height: 8rem;
+        width: auto;
+    }
+    .navegacion_principal a {
+        margin: auto 0;
+    }
+    .titulo_secundario {
+        font-size: 5rem;
+    }
+    .parrafo_secundario {
+        font-size: 3rem;
+    }
+    .contenedor_productos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+    .pregunta_ventajas {
+        font-size: 4.5rem;
+    }
+    .formulario {
+        width: min(75rem,80%);
+    }
+    .btn_formulario {
+        font-size: 2.5rem;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .caja_footer {
+        display: flex;
+        gap: 5rem;
+    }
+    dialog {
+        width: 60%;
+    }
+}
