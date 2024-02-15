@@ -11,24 +11,25 @@ fetch(apiUrl)
 .then(data => {
     // Asumiendo que quieres usar el precio de venta del dólar para la conversión
     const precioDolarVenta = parseFloat(data.venta);
+    console.log(precioDolarVenta);
+    //Mostrar precio de dolar en pantalla
 
+    let dolarPantalla = document.getElementsByClassName('dolar_pantalla');
+    dolarPantalla[0].textContent = `$${precioDolarVenta}`;
+    
     // Calcular el precio en dólares y mostrarlo en la página
-
     let cantidadDeMonto = document.querySelectorAll('p.monto').length;
-    console.log(cantidadDeMonto);
+
 
 for(let i=0; i<cantidadDeMonto; i++){
     // Obtener el precio en moneda local desde tu página web
     let precioDolar = document.getElementsByClassName('preciodolar');
     precioDolar = precioDolar[i].textContent;
     precioDolar = parseInt(precioDolar);
-    console.log(precioDolar);
 
     let precioEnPesos = precioDolar * precioDolarVenta;
-    console.log(precioEnPesos);
 
     let elementoMonto = document.querySelectorAll('p.monto')[i];
-    console.log(elementoMonto);
 
     elementoMonto.textContent = `A$S ${precioEnPesos}`;
 }

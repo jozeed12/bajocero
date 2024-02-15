@@ -59,6 +59,15 @@ body {
     display: block;
 }
 
+.caja_titulo_bajocero {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo_bajocero {
+    width: 40rem;
+}
+
 .contenedor_main {
     width: min(95%, 120rem);
     margin: 0 auto;
@@ -341,11 +350,14 @@ body {
         flex-direction: row;
     }
     .logo {
-        height: 8rem;
+        height: 12rem;
         width: auto;
     }
     .titulo_secundario {
         font-size: 3rem;
+    }
+    .titulo_bajocero {
+        width: 70rem;
     }
     .parrafo_secundario {
         font-size: 2rem;
@@ -388,8 +400,30 @@ body {
         height: 12rem;
         width: auto;
     }
+    .caja_titulo_bajocero {
+        margin-top: 5rem;
+    }
+    .titulo_bajocero {
+        width: 110rem;
+    }
     .header {
-        padding-bottom: 35rem;
+        padding-bottom: 12rem;
+    }
+    .caja_precio_dolar{
+        position: absolute;
+        left: 10rem;
+        top: 69rem;
+        text-align: center;
+        border: solid 1px;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    .caja_precio_dolar h2 {
+        margin: 0 0 1rem 0;
+    }
+    .dolar_pantalla {
+        margin: 0;
+        font-size: 2.2rem;
     }
     .titulos {
         margin-top: 8rem;
