@@ -80,6 +80,10 @@ body {
     font-size: 4.5rem;
 }
 
+.caja_precio_dolar {
+    display: none;
+}
+
 .titulo_secundario {
     margin: 3rem 0;
     text-align: center;
@@ -417,6 +421,7 @@ body {
         border: solid 1px;
         border-radius: 1rem;
         padding: 1rem;
+        display: block;
     }
     .caja_precio_dolar h2 {
         margin: 0 0 1rem 0;
