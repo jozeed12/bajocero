@@ -1,0 +1,80 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    background-image: url(../../../build/img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 3rem 7rem 3rem;
+    display: block;
+
+    @include m.desktop {
+        padding-bottom: 12rem;
+    }
+
+    .caja_nav {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        box-sizing: border-box; 
+
+        @include m.desktop {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .logo {
+            height: 10rem;
+            width: auto;
+
+            @include m.desktop {
+                height: 12rem;
+                width: auto;
+            }
+        }
+
+        .navegacion_principal {
+            font-size: 2.5rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @include m.desktop {
+                flex-direction: row;
+            }
+
+            a {
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                padding: 2.5rem;
+                border-radius: 0.5rem;
+                text-align: center;
+                transition: background-color 0.5s, color 0.5s;
+            }
+
+            a:hover {
+                color: #33a3ff;
+                transition: background-color 0.5s, color 0.5s;
+            }
+        }
+    }
+
+    .caja_titulo_bajocero {
+        display: flex;
+        justify-content: center;
+
+        @include m.desktop {
+            margin-top: 5rem;
+        }
+
+        .titulo_bajocero {
+            width: 40rem;
+
+            @include m.desktop {
+                width: 100rem;
+            }
+        }
+    }
+}
