@@ -38,3 +38,4 @@ for(let i=0; i<cantidadDeMonto; i++){
 .catch(error => {
     console.error('Error al obtener los datos de la API:', error);
 });
+
