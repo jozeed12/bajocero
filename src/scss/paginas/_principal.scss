@@ -115,8 +115,16 @@
             }
         }
     }
+}
 
-    #carrito {
-        width: 10%;
-    }
+#caja-carrito {
+    background-color: #17bb76;
+    position: fixed;
+    bottom: 5rem;
+    left: 52rem;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 4rem;
+    color: black;
 }
